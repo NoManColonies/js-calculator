@@ -148,6 +148,7 @@ function App() {
           operator === "" ? setCurrentVal(0) : setNextVal(0);
           setIsMarkedForFloat(false);
           setIsMarkedForInverse(false);
+          setResult(0);
           break;
         default:
           if (operator !== "") {
