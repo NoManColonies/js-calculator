@@ -185,9 +185,7 @@ function App() {
   return (
     <CalcFrame>
       <TextDisplay>
-        {Math.abs(
-          isMarkedForResult ? result : operator !== "" ? nextVal : currentVal
-        )}
+        {isMarkedForResult ? result : operator !== "" ? nextVal : currentVal}
       </TextDisplay>
       {buttonMapping.map((row, rowIndex) =>
         row.map((column, columnIndex) => (
